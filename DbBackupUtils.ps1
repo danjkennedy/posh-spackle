@@ -27,7 +27,7 @@ function Db-Backup(
 
     try {
 
-    $timestamp = Get-Date -format yyyyMMddHHmmss
+    $timestamp = Get-Date -format yyyy-MM-dd-HHmmss
     $backupDirectory = $server.Settings.BackupDirectory
     $dbName = $db.Name
 
