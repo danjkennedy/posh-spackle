@@ -1,4 +1,4 @@
-function Db-Backup(
+function Backup-Db(
     [parameter(Mandatory = $true)][string]$DbHost,
     [parameter(Mandatory = $true)][string]$DbName,
     [parameter(Mandatory = $true)][string]$UserName,
@@ -65,7 +65,7 @@ function Db-Backup(
     }
 }
 
-function Db-Restore(
+function Restore-Db(
     [parameter(Mandatory = $true)][string]$DbHost,
     [parameter(Mandatory = $true)][string]$DbName,
     [parameter(Mandatory = $true)][string]$Restore,

@@ -9,5 +9,5 @@ if (!$Env:HOME) { $Env:HOME = "$Env:HOMEDRIVE$Env:HOMEPATH" }
 if (!$Env:HOME) { $Env:HOME = "$Env:USERPROFILE" }
 
 Export-ModuleMember -Function @(
-        'Db-Backup',
-        'Db-Restore')
+        'Backup-Db',
+        'Restore-Db')
